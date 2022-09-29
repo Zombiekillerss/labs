@@ -14,10 +14,14 @@ class Search(var request: String) {
     private var pages: List<Page> = emptyList()
 
     init {
-        request = URLEncoder.encode(request, "UTF-8")
-        val jsonString = URL(requestLink + request).readText()
+        request = URLEncoder.encode("\"$request\"", "UTF-8")
+        val jsonString = URL("$requestLink$request").readText()
+        println(jsonString)
 
         pages = getResults(jsonString)
+        if(pages.isEmpty()) {
+            throw Exception("Null search result")
+        }
     }
     private fun getResults(jsonString: String): List<Page> {
         val newResults: MutableList<Page> = mutableListOf()
@@ -29,20 +33,20 @@ class Search(var request: String) {
 
         jsonArray.forEach {
             newResults.add(Page(it.asJsonObject.getAsJsonPrimitive("title").toString(),
-                it.asJsonObject.getAsJsonPrimitive("pageId").toString()))
+                it.asJsonObject.getAsJsonPrimitive("pageid").toString() ))
         }
 
         return newResults
     }
 
     fun getPages():String{
-        var page:String = ""
+        var page = ""
         for(i in pages.indices){
-            page += pages[i].toString() + "\n"
+            page += "${i+1} " + pages[i].toString() + "\n"
         }
         return page
     }
-    fun openLinkIndex(index: String){
-        Desktop.getDesktop().browse(URI(resultLink + pages[index.toInt()].pageId))
+    fun openLinkIndex(index: Int){
+        Desktop.getDesktop().browse(URI(resultLink + pages[index].pageid))
     }
 }
