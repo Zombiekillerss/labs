@@ -11,13 +11,13 @@ class Search(var request: String) {
     private val requestLink = "https://ru.wikipedia.org/w/api.php?action=query&list=search&utf8=&format=json&srsearch="
     private val resultLink = "https://ru.wikipedia.org/w/index.php?curid="
 
-    private var allId: List<Page> = emptyList()
+    private var pages: List<Page> = emptyList()
 
     init {
         request = URLEncoder.encode(request, "UTF-8")
         val jsonString = URL(requestLink + request).readText()
 
-        allId = getResults(jsonString)
+        pages = getResults(jsonString)
     }
     private fun getResults(jsonString: String): List<Page> {
         val newResults: MutableList<Page> = mutableListOf()
@@ -35,7 +35,14 @@ class Search(var request: String) {
         return newResults
     }
 
+    fun getPages():String{
+        var page:String = ""
+        for(i in pages.indices){
+            page += pages[i].toString() + "\n"
+        }
+        return page
+    }
     fun openLinkIndex(index: String){
-        Desktop.getDesktop().browse(URI(resultLink + allId[index.toInt()].pageId))
+        Desktop.getDesktop().browse(URI(resultLink + pages[index.toInt()].pageId))
     }
 }
