@@ -1,4 +1,4 @@
 package lab2
 
-class OpenXmlFiles(path:String) {
+class OpenXmlFiles(path:String) : OpenFile {
 }
