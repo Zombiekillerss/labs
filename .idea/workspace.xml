@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add getPages">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab1/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab1/Page.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab1/Page.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab1/Search.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab1/Search.kt" afterDir="false" />
+    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add Main.kt&#10;add code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,35 @@
       <option name="project" value="LOCAL" />
       <updated>1664434506838</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add dependencies">
+      <created>1664435671891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664435671891</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix bugs">
+      <created>1664435686600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664435686600</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix bugs">
+      <created>1664435706835</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664435706835</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add Main.kt&#10;add code">
+      <created>1664435753708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664435753708</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,17 +150,9 @@
     <MESSAGE value="add class Search&#10;add fun getResult&#10;add fun openLinkId" />
     <MESSAGE value="add data class Page" />
     <MESSAGE value="add getPages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getPages" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/lab1/Main.kt</url>
-          <line>6</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add dependencies" />
+    <MESSAGE value="fix bugs" />
+    <MESSAGE value="add Main.kt&#10;add code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Main.kt&#10;add code" />
   </component>
 </project>
