@@ -1,4 +1,4 @@
 package lab2
 
-class OpenCsvFiles(path:String) {
+class OpenCsvFiles(path:String) : OpenFile {
 }
