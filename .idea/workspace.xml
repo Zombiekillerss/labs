@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add Main.kt&#10;add code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add class Address">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenCsvFiles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenCsvFiles.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +20,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myFormatOnlyChangedLines" value="true" />
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +47,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -129,7 +137,77 @@
       <option name="project" value="LOCAL" />
       <updated>1664435753708</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add demo lab1">
+      <created>1666017899590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666017899590</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add class OpenAllFiles">
+      <created>1666019455706</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666019455706</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add class OpenCsvFiles">
+      <created>1666019466738</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666019466738</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add class OpenXmlFiles">
+      <created>1666019486911</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666019486911</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add class WorkWithFiles">
+      <created>1666019566379</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666019566379</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add OpenFile">
+      <created>1666020499463</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666020499463</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add OpenFile">
+      <created>1666020510427</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666020510427</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add data class Adress">
+      <created>1666025888324</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666025888324</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add demo version">
+      <created>1666038376141</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666038376141</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add class Address">
+      <created>1666038398647</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666038398647</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +231,15 @@
     <MESSAGE value="add dependencies" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="add Main.kt&#10;add code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Main.kt&#10;add code" />
+    <MESSAGE value="add demo lab1" />
+    <MESSAGE value="add class OpenAllFiles" />
+    <MESSAGE value="add class OpenCsvFiles" />
+    <MESSAGE value="add class OpenXmlFiles" />
+    <MESSAGE value="add class WorkWithFiles" />
+    <MESSAGE value="add OpenFile" />
+    <MESSAGE value="add data class Adress" />
+    <MESSAGE value="add demo version" />
+    <MESSAGE value="add class Address" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class Address" />
   </component>
 </project>

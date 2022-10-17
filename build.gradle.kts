@@ -16,6 +16,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
+    implementation("org.apache.commons:commons-csv:1.9.0")
 }
 
 tasks.test {
