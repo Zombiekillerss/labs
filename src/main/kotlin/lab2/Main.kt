@@ -10,5 +10,5 @@ fun main() {
             WorkWithFiles(datas)
         }
     } while (path != "e")
-    println(OpenCsvFiles("C:\\Users\\sasha\\OneDrive\\Документы\\GitHub\\labs\\src\\main\\kotlin\\lab2\\address.csv").test)
+    println(OpenCsvFiles("C:\\Users\\sasha\\OneDrive\\Рабочий стол\\всякая всячина\\ООП\\address.csv").test)
 }
