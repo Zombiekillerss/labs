@@ -11,7 +11,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 class OpenAllFiles(path: String) {
-    private lateinit var listData: HashMap<Address, Int>
+    var listData: HashMap<Address, Int> = hashMapOf()
     private val item = "item"
 
     init {
@@ -57,7 +57,8 @@ class OpenAllFiles(path: String) {
             val address = Address(city, street, house.toInt(), floor.toInt())
             if (listData.containsKey(address)) {
                 listData[address]?.let { listData.replace(address, it.plus(1)) }
-            }
+            } else
+                listData[address] = 1
         }
     }
 }
