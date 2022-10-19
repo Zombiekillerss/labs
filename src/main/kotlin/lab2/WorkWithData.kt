@@ -10,11 +10,11 @@ class WorkWithData(private val data: HashMap<Address, Int>) {
 
     fun printCountHouse() {
         val listHouse = mutableListOf<Int>()
-        var countOne = 1
-        var countTwo = 1
-        var countThree = 1
-        var countFour = 1
-        var countFive = 1
+        var countOne = 0
+        var countTwo = 0
+        var countThree = 0
+        var countFour = 0
+        var countFive = 0
         for (address in data) {
             if (!listHouse.contains(address.key.house)) {
                 when (address.key.floor) {
