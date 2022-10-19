@@ -2,14 +2,36 @@ package lab2
 
 class WorkWithData(private val data: HashMap<Address, Int>) {
     fun printDublicateEntry() {
+        println("Адресс и количество повторений: ")
         for (address in data) {
-            println(address)
+            println("${address.key} Повторений ${address.value}")
         }
     }
 
     fun printCountHouse() {
+        val listHouse = mutableListOf<Int>()
+        var countOne = 1
+        var countTwo = 1
+        var countThree = 1
+        var countFour = 1
+        var countFive = 1
         for (address in data) {
-
+            if (!listHouse.contains(address.key.house)) {
+                when (address.key.floor) {
+                    1 -> countOne++
+                    2 -> countTwo++
+                    3 -> countThree++
+                    4 -> countFour++
+                    5 -> countFive++
+                }
+                listHouse.add(address.key.house)
+            }
         }
+        println("Выводим количество 1,2,3,4,5 этажных домов")
+        println("1 этажных домов: $countOne")
+        println("2 этажных домов: $countTwo")
+        println("3 этажных домов: $countThree")
+        println("4 этажных домов: $countFour")
+        println("5 этажных домов: $countFive")
     }
 }
