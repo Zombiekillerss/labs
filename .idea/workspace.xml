@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add demo version and class Address">
+    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add printDublicateEntry">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/Address.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/Address.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenAllFiles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenAllFiles.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/OpenFile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/WorkWithData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/WorkWithData.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +219,70 @@
       <option name="project" value="LOCAL" />
       <updated>1666038883370</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add demo version">
+      <created>1666039038421</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666039038421</updated>
+    </task>
+    <task id="LOCAL-00024" summary="delete OpenCsvFiles">
+      <created>1666186863222</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666186863222</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update dependencies">
+      <created>1666186890096</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666186890096</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add method readCsv">
+      <created>1666186913768</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666186913768</updated>
+    </task>
+    <task id="LOCAL-00027" summary="release OpenAllFiles">
+      <created>1666187531143</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666187531143</updated>
+    </task>
+    <task id="LOCAL-00028" summary="release OpenXmlFiles">
+      <created>1666188314474</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666188314474</updated>
+    </task>
+    <task id="LOCAL-00029" summary="delete OpenXmlFiles">
+      <created>1666188359403</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666188359403</updated>
+    </task>
+    <task id="LOCAL-00030" summary="rename class">
+      <created>1666188382441</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666188382441</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add printDublicateEntry">
+      <created>1666194136539</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1666194136539</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,8 +297,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add empty project" />
-    <MESSAGE value="add added dependencies" />
     <MESSAGE value="delete Main" />
     <MESSAGE value="add class Search&#10;add fun getResult&#10;add fun openLinkId" />
     <MESSAGE value="add data class Page" />
@@ -245,9 +311,17 @@
     <MESSAGE value="add class WorkWithFiles" />
     <MESSAGE value="add OpenFile" />
     <MESSAGE value="add data class Adress" />
-    <MESSAGE value="add demo version" />
     <MESSAGE value="add class Address" />
     <MESSAGE value="add demo version and class Address" />
-    <option name="LAST_COMMIT_MESSAGE" value="add demo version and class Address" />
+    <MESSAGE value="add demo version" />
+    <MESSAGE value="delete OpenCsvFiles" />
+    <MESSAGE value="update dependencies" />
+    <MESSAGE value="add method readCsv" />
+    <MESSAGE value="release OpenAllFiles" />
+    <MESSAGE value="release OpenXmlFiles" />
+    <MESSAGE value="delete OpenXmlFiles" />
+    <MESSAGE value="rename class" />
+    <MESSAGE value="add printDublicateEntry" />
+    <option name="LAST_COMMIT_MESSAGE" value="add printDublicateEntry" />
   </component>
 </project>
