@@ -17,6 +17,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
     implementation("org.apache.commons:commons-csv:1.9.0")
+    implementation("xmlpull:xmlpull:1.1.3.4d_b4_min")
 }
 
 tasks.test {
