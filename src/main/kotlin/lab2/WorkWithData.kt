@@ -4,7 +4,8 @@ class WorkWithData(private val data: HashMap<Address, Int>) {
     fun printDublicateEntry() {
         println("Адресс и количество повторений: ")
         data.forEach {
-            println("${it.key} Повторений ${it.value}")
+            if (it.value > 1)
+                println("${it.key} Повторений ${it.value}")
         }
     }
 

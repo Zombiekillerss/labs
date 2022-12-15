@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="add data class CountFloor">
+    <list default="true" id="c91801d6-9b3c-4f3e-8533-d7205cf8b57b" name="Changes" comment="fix bugs">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab3/Handler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab3/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab3/Opener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab3/Schedule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab3/TimetableBot.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab4/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab4/SQLDatabaseConnection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab1/Search.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab1/Search.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/CountFloor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/CountFloor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/lab2/WorkWithData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab2/WorkWithData.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +34,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="UML Use Case" />
+        <option value="UML Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -48,11 +62,28 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sasha/OneDrive/Документы/GitHub/labs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;942a37979c498b43050a2f6f43766095&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="lab3_4" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +92,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664390434836</updated>
+      <workItem from="1669115428149" duration="2345000" />
+      <workItem from="1669371089794" duration="1527000" />
+      <workItem from="1670662672083" duration="32000" />
+      <workItem from="1670670559790" duration="47000" />
+      <workItem from="1670670619290" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="add empty project">
       <created>1664390472927</created>
@@ -335,8 +371,18 @@
       <option name="project" value="LOCAL" />
       <updated>1666208312502</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix bugs">
+      <created>1666208783595</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1666208783595</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -373,19 +419,16 @@
     <MESSAGE value="release lab2" />
     <MESSAGE value="add toString" />
     <MESSAGE value="delete class adress" />
-    <MESSAGE value="fix bugs" />
     <MESSAGE value="add data class CountFloor" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data class CountFloor" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.Exception" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="lab3_4.TimetableBot" memberName="requestConfig" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/labs$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1666198552248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

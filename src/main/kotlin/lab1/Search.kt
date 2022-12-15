@@ -6,8 +6,7 @@ import java.awt.Desktop
 import java.net.URI
 import java.net.URL
 import java.net.URLEncoder
-
-class Search(var request: String) {
+class Search(private var request: String) {
     private val requestLink = "https://ru.wikipedia.org/w/api.php?action=query&list=search&utf8=&format=json&srsearch="
     private val resultLink = "https://ru.wikipedia.org/w/index.php?curid="
 
