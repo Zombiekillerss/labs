@@ -15,7 +15,6 @@ class Search(private var request: String) {
     init {
         request = URLEncoder.encode("\"$request\"", "UTF-8")
         val jsonString = URL("$requestLink$request").readText()
-        println(jsonString)
 
         pages = getResults(jsonString)
         if(pages.isEmpty()) {

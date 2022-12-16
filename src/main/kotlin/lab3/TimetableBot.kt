@@ -48,7 +48,8 @@ class TimetableBot(private val isLab3: Boolean) : TelegramLongPollingBot() {
         if (message.hasText()) {
             val messageText = message.text
             when (messageText) {
-                "/start" -> responseText = "Добро пожаловать!"
+                "/start" -> responseText =
+                    "Добро пожаловать!\nЯ буду показывать вам расписание на выбранный день и группу."
 
                 "0301" -> {
                     isGroup = false
@@ -136,5 +137,4 @@ class TimetableBot(private val isLab3: Boolean) : TelegramLongPollingBot() {
 
         return markup
     }
-
 }

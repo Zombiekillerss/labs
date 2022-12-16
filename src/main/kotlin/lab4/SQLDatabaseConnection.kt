@@ -43,11 +43,12 @@ class SQLDatabaseConnection {
     fun updateParity(newDayWeek: String, newParity: String) {
         try {
             val connection = DriverManager.getConnection(CONNECTION_URL, "bot", "1")
-            connection.prepareStatement(
+            val state = connection.prepareStatement(
                 "update Week\n" +
                         "set DayWeek='$newDayWeek'" +
                         ", WeekNow='$newParity'"
-            ).executeUpdate()
+            )
+            state.executeUpdate()
             connection.close()
         } catch (e: SQLException) {
             e.printStackTrace()
@@ -65,14 +66,15 @@ class SQLDatabaseConnection {
         val line = state.executeQuery()
         var result = ""
         while (line.next()) {
-            result = line.getString("WeekSubjects").trim() + ":" +
+            result += line.getString("WeekSubjects").trim() + ":" +
                     line.getString("TimeSubject").trim() + ":" +
-                    line.getString("NumberGroup").trim() + ":" +
-                    line.getString("DayVariant").trim() + ":" +
+                    line.getString("TypeSubject").trim() + ":" +
                     line.getString("SubjectCurrent").trim() + ":" +
                     line.getString("NameSubject").trim() + ":" +
                     line.getString("Audiencecurrent").trim() + "\n"
         }
+        if (result.isNotEmpty())
+            result = result.substring(0, result.length - 1)
         return result
     }
 }

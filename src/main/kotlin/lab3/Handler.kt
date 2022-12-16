@@ -27,54 +27,62 @@ class Handler {
         group: String
     ): String {
         val parityWeek = getCurrentWeekSQL(sqlConnection)
-        processData(sqlConnection.getInformation(group, parityWeek, day), parityWeek)
+        processData(sqlConnection.getInformation(group, parityWeek, day), parityWeek, day)
+        if ((dataMap[day]?.size ?: 0) == 0)
+            return "*${day}*\n*Пар нет*"
+
         return getString(day, dataMap)
     }
 
     private fun getCurrentWeekSQL(sqlConnection: SQLDatabaseConnection): String {
         val dateFormatInput = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         val dataWeek = processParity(sqlConnection.getInformationParity(), dateFormatInput)
-        sqlConnection.updateParity(dataWeek[0], dataWeek[1])
+        sqlConnection.updateParity(dataWeek[1], dataWeek[0])
         return dataWeek[0]
     }
 
     private fun processData(
         dataLines: List<String>,
         currentWeek: String,
+        day: String = ""
     ) {
-        var currentDay = ""
-        for (i in dataLines) {
-            if (i[0] == '1' || i[0] == '2') {
-                if (i[0] == currentWeek[0]) {
-                    val dataNow = i.trim().split(':').toMutableList()
-                    var j = 1
-                    if (dataNow.size > 2) {
-                        while (j < dataNow.size) {
-                            dataMap[currentDay]?.add(
-                                Schedule(
-                                    dataNow[j],
-                                    dataNow[j + 1],
-                                    dataNow[j + 2],
-                                    dataNow[j + 3],
-                                    dataNow[j + 4],
-                                    currentWeek
+        var currentDay = day
+        if (day != "")
+            dataMap[day] = mutableListOf()
+        if (dataLines[0] != "") {
+            for (i in dataLines) {
+                if (i[0] == '1' || i[0] == '2') {
+                    if (i[0] == currentWeek[0]) {
+                        val dataNow = i.trim().split(':').toMutableList()
+                        var j = 1
+                        if (dataNow.size > 2) {
+                            while (j < dataNow.size) {
+                                dataMap[currentDay]?.add(
+                                    Schedule(
+                                        dataNow[j],
+                                        dataNow[j + 1],
+                                        dataNow[j + 2],
+                                        dataNow[j + 3],
+                                        dataNow[j + 4],
+                                        currentWeek
+                                    )
                                 )
-                            )
-                            j += 5
+                                j += 5
+                            }
                         }
                     }
+                } else {
+                    when (i) {
+                        "пн" -> currentDay = "Понедельник"
+                        "вт" -> currentDay = "Вторник"
+                        "ср" -> currentDay = "Среда"
+                        "чт" -> currentDay = "Четверг"
+                        "пт" -> currentDay = "Пятница"
+                        "су" -> currentDay = "Суббота"
+                    }
+                    dataMap[currentDay] = mutableListOf()
+                    continue
                 }
-            } else {
-                when (i) {
-                    "пн" -> currentDay = "Понедельник"
-                    "вт" -> currentDay = "Вторник"
-                    "ср" -> currentDay = "Среда"
-                    "чт" -> currentDay = "Четверг"
-                    "пт" -> currentDay = "Пятница"
-                    "су" -> currentDay = "Суббота"
-                }
-                dataMap[currentDay] = mutableListOf()
-                continue
             }
         }
     }
@@ -82,6 +90,9 @@ class Handler {
     private fun getString(day: String, mapData: Map<String, List<Schedule>>): String {
         var result = ""
         result += "*$day*\n"
+        result += if ((mapData[day]?.get(0)?.week ?: "") == "2")
+            "*Неделя: четная*\n"
+        else "*Неделя: нечетная*\n"
         for (j in mapData[day]?.indices!!)
             result += "*Пара №${j + 1}*\n ${mapData[day]?.get(j)} \n"
         return result
@@ -108,6 +119,4 @@ class Handler {
         }
         return dataNow
     }
-
-
 }

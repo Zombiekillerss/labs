@@ -12,6 +12,6 @@ data class Schedule(
         return "Время: $time\nПредмет: $subject($typeSubject): $Audience\nПреподаватель: $Name\n"
     }*/
     override fun toString(): String {
-        return "$time\n$subject\n$typeSubject\n$Audience\n$Name\n$week"
+        return "Время: $time\nПредмет: $subject($typeSubject)\nАудитория: $Audience\nПреподаватель: $Name\n"
     }
 }
